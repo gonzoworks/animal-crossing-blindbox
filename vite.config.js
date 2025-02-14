@@ -1,8 +1,11 @@
-export default {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    base: "/animal-crossing-blindbox/",  // ✅ Ensure this matches your repo name!
     root: "./",
     publicDir: "public",
     server: {
-        port: 5173, // You can change the port if needed
-        open: true,  // Automatically open the browser
+        port: 5173,
+        open: true,
     }
-};
+});
